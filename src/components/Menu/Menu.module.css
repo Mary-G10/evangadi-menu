@@ -1,0 +1,28 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;1,100;1,200&display=swap');
+
+/* Menu container styles */
+.foodscontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .foodscontainer {
+    max-width: 960px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .foodscontainer {
+    max-width: 440px;
+    grid-template-columns: 1fr;
+  }
+}
